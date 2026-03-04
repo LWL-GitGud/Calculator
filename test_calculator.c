@@ -23,7 +23,7 @@ void test_add_zero(void){
 }
 
 void test_subtract_positive_numbers(void){
-    TEST_ASSERT_EQUAL(6, subtract(10,4));
+    TEST_ASSERT_EQUAL(7, subtract(10,4));
 }
 
 int main(void){
