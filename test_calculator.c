@@ -22,11 +22,16 @@ void test_add_zero(void){
     TEST_ASSERT_EQUAL(0, add(0, 0));
 }
 
+void test_subtract_positive_numbers(void){
+    TEST_ASSERT_EQUAL(6, subtract(10,4));
+}
+
 int main(void){
     UNITY_BEGIN();
     RUN_TEST(test_add_positive_numbers);
     RUN_TEST(test_add_positive_and_negative_numbers);
     RUN_TEST(test_add_negative_numbers);
     RUN_TEST(test_add_zero);
+    RUN_TEST(test_subtract_positive_numbers);
     return UNITY_END();
 }
