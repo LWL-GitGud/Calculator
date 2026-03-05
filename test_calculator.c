@@ -60,6 +60,11 @@ void test_multiply_zero(void){
     TEST_ASSERT_EQUAL(0, multiply(0, 0));
 }
 
+void test_divide_positive_numbers(void){
+    TEST_ASSERT_EQUAL(2, divide(5, 2));
+    TEST_ASSERT_EQUAL(3, divide(12, 4));
+}
+
 int main(void){
     UNITY_BEGIN();
     RUN_TEST(test_add_positive_numbers);
