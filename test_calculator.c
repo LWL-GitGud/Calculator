@@ -6,11 +6,11 @@ void setUp(void){}
 void tearDown(void){}
 
 void test_add_positive_numbers(void){
-    TEST_ASSERT_EQUAL(5, add(2,3));
+    TEST_ASSERT_EQUAL(5, add(2, 3));
 }
 
 void test_add_positive_and_negative_numbers(void){
-    TEST_ASSERT_EQUAL(1, add(5,-4));
+    TEST_ASSERT_EQUAL(1, add(5, -4));
 }
 
 void test_add_negative_numbers(void){
@@ -44,7 +44,20 @@ void test_subtract_zero(void){
 }
 
 void test_multiply_positive_numbers(void){
-    TEST_ASSERT_EQUAL(49, multiply(6,8));
+    TEST_ASSERT_EQUAL(48, multiply(6, 8));
+}
+
+void test_multiply_negative_numbers(void){
+    TEST_ASSERT_EQUAL(36, multiply(-4, -9));
+}
+
+void test_multiply_positive_and_negative_numbers(void){
+    TEST_ASSERT_EQUAL(-16, multiply(-8, 2));
+}
+
+void test_multiply_zero(void){
+    TEST_ASSERT_EQUAL(0, multiply(10, 0));
+    TEST_ASSERT_EQUAL(0, multiply(0, 0));
 }
 
 int main(void){
@@ -58,5 +71,8 @@ int main(void){
     RUN_TEST(test_subtract_positive_and_negative_numbers);
     RUN_TEST(test_subtract_zero);
     RUN_TEST(test_multiply_positive_numbers);
+    RUN_TEST(test_multiply_negative_numbers);
+    RUN_TEST(test_multiply_positive_and_negative_numbers);
+    RUN_TEST(test_multiply_zero);
     return UNITY_END();
 }
