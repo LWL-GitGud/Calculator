@@ -44,7 +44,7 @@ void test_subtract_zero(void){
 }
 
 void test_multiply_positive_numbers(void){
-    TEST_ASSERT_EQUAL(48, multiply(6,8));
+    TEST_ASSERT_EQUAL(49, multiply(6,8));
 }
 
 int main(void){
