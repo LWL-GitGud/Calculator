@@ -43,6 +43,10 @@ void test_subtract_zero(void){
     TEST_ASSERT_EQUAL(-10, subtract(0, 10));
 }
 
+void test_multiply_positive_numbers(void){
+    TEST_ASSERT_EQUAL(48, multiply(6,8));
+}
+
 int main(void){
     UNITY_BEGIN();
     RUN_TEST(test_add_positive_numbers);
@@ -53,5 +57,6 @@ int main(void){
     RUN_TEST(test_subtract_negative_numbers);
     RUN_TEST(test_subtract_positive_and_negative_numbers);
     RUN_TEST(test_subtract_zero);
+    RUN_TEST(test_multiply_positive_numbers);
     return UNITY_END();
 }
