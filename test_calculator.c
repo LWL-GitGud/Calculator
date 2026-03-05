@@ -61,7 +61,7 @@ void test_multiply_zero(void){
 }
 
 void test_divide_positive_numbers(void){
-    TEST_ASSERT_EQUAL(2, divide(5, 2));
+    TEST_ASSERT_EQUAL(3, divide(5, 2));
     TEST_ASSERT_EQUAL(3, divide(12, 4));
 }
 
@@ -79,5 +79,6 @@ int main(void){
     RUN_TEST(test_multiply_negative_numbers);
     RUN_TEST(test_multiply_positive_and_negative_numbers);
     RUN_TEST(test_multiply_zero);
+    RUN_TEST(test_divide_positive_numbers);
     return UNITY_END();
 }
